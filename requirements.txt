@@ -2,3 +2,6 @@ django
 gunicorn
 whitenoise
 dj_database_url
+python-dotenv
+psycopg2-binary
+mysqlclient
