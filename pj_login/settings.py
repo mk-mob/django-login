@@ -73,15 +73,28 @@ WSGI_APPLICATION = 'pj_login.wsgi.application'
 
 
 
-import dj_database_url
-from dotenv import (
-    find_dotenv,
-    load_dotenv,
-)
-load_dotenv(find_dotenv())
+# import dj_database_url
+# from dotenv import (
+#     find_dotenv,
+#     load_dotenv,
+# )
+# load_dotenv(find_dotenv())
+# DATABASES = {
+#     'default':dj_database_url.config(conn_max_age=600)
+# }
+
 DATABASES = {
-    'default':dj_database_url.config(conn_max_age=600)
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dd3q98vjtga11k',
+        'USER': 'ikridqogzyohip',
+        'PASSWORD': '92ae55c3f81b980e9001935833ffa50f70b09a17b86e10a2cddf464e4a40dbe7',
+        'HOST': 'ec2-44-213-151-75.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
 }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
