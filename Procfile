@@ -1,2 +1,2 @@
 web: gunicorn pj_login.wsgi
-release: php artisan migrate --force
+release: python manage.py migrate --force
