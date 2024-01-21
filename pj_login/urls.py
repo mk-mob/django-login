@@ -18,3 +18,5 @@ urlpatterns = [
     path("signup/", views.SignUpView.as_view(), name="signup"),
     path('activate/<uidb64>/<token>/', views.ActivateView.as_view(), name='activate'),
 ]
+
+handler500 = views.my_customized_server_error
