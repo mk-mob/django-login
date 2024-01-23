@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'pj_login.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'ec2-52-2-167-43.compute-1.amazonaws.com',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'dda3qh6hjh2pk',
         'USER': 'acjvdtpqtwaerh',
         'PASSWORD': '791efed7a8baad517dff62a52ea897458e0d61c72c6fd8397c8ee3e5a448472d',
