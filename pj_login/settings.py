@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'pj_login.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dd3q98vjtga11k',
-        'USER': 'ikridqogzyohip',
-        'PASSWORD': '92ae55c3f81b980e9001935833ffa50f70b09a17b86e10a2cddf464e4a40dbe7',
+        'ENGINE': 'ec2-52-2-167-43.compute-1.amazonaws.com',
+        'NAME': 'dda3qh6hjh2pk',
+        'USER': 'acjvdtpqtwaerh',
+        'PASSWORD': '791efed7a8baad517dff62a52ea897458e0d61c72c6fd8397c8ee3e5a448472d',
         'HOST': 'ec2-44-213-151-75.compute-1.amazonaws.com',
         'PORT': '5432',
     }
