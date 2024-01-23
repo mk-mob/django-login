@@ -73,26 +73,26 @@ WSGI_APPLICATION = 'pj_login.wsgi.application'
 
 
 
-# import dj_database_url
-# from dotenv import (
-#     find_dotenv,
-#     load_dotenv,
-# )
-# load_dotenv(find_dotenv())
-# DATABASES = {
-#     'default':dj_database_url.config(conn_max_age=600)
-# }
-
+import dj_database_url
+from dotenv import (
+    find_dotenv,
+    load_dotenv,
+)
+load_dotenv(find_dotenv())
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dda3qh6hjh2pk',
-        'USER': 'acjvdtpqtwaerh',
-        'PASSWORD': '791efed7a8baad517dff62a52ea897458e0d61c72c6fd8397c8ee3e5a448472d',
-        'HOST': 'ec2-44-213-151-75.compute-1.amazonaws.com',
-        'PORT': '5432',
-    }
+    'default':dj_database_url.config(conn_max_age=600)
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'dda3qh6hjh2pk',
+#         'USER': 'acjvdtpqtwaerh',
+#         'PASSWORD': '791efed7a8baad517dff62a52ea897458e0d61c72c6fd8397c8ee3e5a448472d',
+#         'HOST': 'ec2-44-213-151-75.compute-1.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
 
 
 
